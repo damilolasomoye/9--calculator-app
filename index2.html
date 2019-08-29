@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator App</title>
+</head>
+
+<body>
+    
+<form>
+        <!-- why use a type of text and not number -->
+    <p id='dateElement'></p>
+    value 1: <input type="text" id="value1" step="0.0001">
+    value 2: <input type="text" id="value2" step="0.0001">
+    operator: 
+    <select id="operator">
+        <option value="add">Add</option>
+        <option value="min">Minus</option>
+        <option value="div">Divide</option>
+        <option value="mul">Multiply</option>
+    </select>
+
+    <div class="alert alert-danger" role="alert" id="results">
+            <!-- intentionally left blank to leave room for answer, see output in google  -->
+    </div>
+
+   <button type="button" class="btn btn-primary" onclick="calculator()">Calculate this operation</button>
+</form>
+
+</body>
+<script src="main2.js"></script>
+</html>
